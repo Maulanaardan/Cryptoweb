@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=New+Amsterdam&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.spinner {
+    display:grid;
+    place-self: center;
+    min-height: 80vh;
+}
+
+.spin {
+    width: 65px;
+    height: 65px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color: #454545;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.list-detail ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    font-family: 'Anek Devanagari';
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.border-navbar {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.50)
+}
